@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Access</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+<div class="glass-card">
+    <h1>wel<span>come</span></h1>
+
+    <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p class="error" id="loginError"></p>
+    </form>
+
+    <div class="links">
+        <span onclick="showCreate()">Create Account</span>
+        <span onclick="showChange()">Change Password</span>
+    </div>
+
+    <!-- CREATE ACCOUNT -->
+    <form id="createForm" class="hidden">
+        <input type="text" id="newUsername" placeholder="New Username" required>
+        <input type="password" id="newPassword" placeholder="New Password" required>
+        <button type="submit">Create Account</button>
+        <p class="error" id="createError"></p>
+    </form>
+
+    <!-- CHANGE PASSWORD -->
+    <form id="changeForm" class="hidden">
+        <input type="text" id="changeUsername" placeholder="Username" required>
+        <input type="password" id="oldPassword" placeholder="Old Password" required>
+        <input type="password" id="newPasswordChange" placeholder="New Password" required>
+        <button type="submit">Change Password</button>
+        <p class="error" id="changeError"></p>
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
