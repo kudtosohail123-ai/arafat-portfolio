@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="fireworks.css">
+</head>
+<body>
+    <canvas id="fireworks"></canvas>
+    <div id="newYearText"></div>
+    <script src="fireworks.js"></script>
+
+      <style>
+
+.container {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.exit-btn {
+    text-decoration: none;
+}
+
+.exit-btn span {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #00e0ff, #0077ff);
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00e0ff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.exit-btn span:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 20px #00e0ff, 0 0 40px #0077ff;
+}
+
+/* Click Effect */
+.exit-btn span:active {
+    transform: scale(0.95);
+}
+
+/* Subtle Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0px); }
+}
+
+.exit-btn span {
+    animation: float 3s ease-in-out infinite;
+}
+
+</style>
+
+
+<div class="container">
+
+    <a href="../portfolio.html#projects" class="exit-btn">
+        <span>Exit</span>
+    </a>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background: #01020e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+canvas{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#newYearText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    white-space: nowrap;
+    display: inline-block;
+    animation: wave 2s infinite alternate ease-in-out;
+    font-family: 'pacifico', cursive;
+}
+
+@keyframes wave {
+    0% { transform: translate(-50%, -50%) translateY(0px); }
+    25% { transform: translate(-50%, -50%) translateY(-5px); }
+    50% { transform: translate(-50%, -50%) translateY(0px); }
+    75% { transform: translate(-50%, -50%) translateY(5px); }
+    100% { transform: translate(-50%, -50%) translateY(0px); }
+}
